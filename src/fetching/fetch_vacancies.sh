@@ -16,21 +16,25 @@ TMP_ALL=$(mktemp)
 
 for (( page=0; page<MAX_PAGES; page++ ))
 do
-    URL="${BASE_URL}?text=${KEYWORD}&per_page=${PER_PAGE}&page=${page}"
+    RESPONSE=$(curl -s -G \
+        -H "User-Agent: vacancy-analytics-app" \
+        --data-urlencode "text=${KEYWORD}" \
+        --data-urlencode "per_page=${PER_PAGE}" \
+        --data-urlencode "page=${page}" \
+        -w "%{http_code}" \
+        "$BASE_URL")
 
-    RESPONSE=$(curl -s -H "User-Agent: vacancy-analytics-app" -w "%{http_code}" "$URL")
     HTTP_CODE="${RESPONSE: -3}"
     BODY="${RESPONSE::-3}"
 
     if [ "$HTTP_CODE" -ne 200 ]; then
         echo "Error: HTTP status $HTTP_CODE on page $page"
-        rm -f "$TMP_ALL"
         exit 1
     fi
 
     echo "$BODY" >> "$TMP_ALL"
-
 done
+
 
 jq -s '[ .[] | .items[] ]' "$TMP_ALL" > ../../raw/data.json
 
