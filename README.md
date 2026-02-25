@@ -37,7 +37,7 @@ Vacancy_Analytics/
 │ ├── cleaning/
 │ │ └── cleaning.py
 │ └── analytics/
-│ └── analytics.py
+│   └── analytics.py
 ```
 
 ---
