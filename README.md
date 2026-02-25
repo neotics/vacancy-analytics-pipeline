@@ -19,6 +19,8 @@ Loyiha modular arxitektura asosida yozilgan va bitta entry-point orqali ishga tu
 ---
 
 ## Project Structure
+
+```
 Vacancy_Analytics/
 │
 ├── main.py
@@ -36,6 +38,7 @@ Vacancy_Analytics/
 │ │ └── cleaning.py
 │ └── analytics/
 │ └── analytics.py
+```
 
 ---
 
@@ -70,23 +73,20 @@ Root papkadan ishga tushiriladi:
 python3 main.py --keyword "data science" --limit 100
 ```
 
-CLI Arguments
-```Markdown
-Argument	Description	Default
---keyword	Vacancy search keyword	python
---limit	Number of vacancies to fetch	100
-```
+## CLI Arguments
+
+| Argument  | Description                      | Default |
+|-----------|----------------------------------|---------|
+| --keyword | Vacancy search keyword           | python  |
+| --limit   | Number of vacancies to fetch     | 100     |
 
 ## Output Files
 
 Pipeline natijasida quyidagi fayllar hosil bo‘ladi:
 
 raw/data.json
-
 raw/data.csv
-
 processed/clean.csv
-
 processed/report.md
 
 ## Report Example
@@ -124,32 +124,32 @@ Total vacancies: 100
 
 ## Features
 
-Modular architecture
-Full CLI support
-Russian + English level detection
-Multi-category direction analysis
-Markdown report generation
-Automated end-to-end pipeline
+- Modular architecture
+- Full CLI support
+- Russian + English level detection
+- Multi-category direction analysis
+- Markdown report generation
+- Automated end-to-end pipeline
 
 ## Skills Demonstrated
 
-Shell scripting
-API data fetching
-JSON processing
-CSV handling
-Data cleaning
-Classification logic
-Analytics with Python
-CLI design
-Modular project architecture
+- Shell scripting
+- API data fetching
+- JSON processing
+- CSV handling
+- Data cleaning
+- Classification logic
+- Analytics with Python
+- CLI design
+- Modular project architecture
 
 ## Future Improvements
 
-Logging system
-Execution time tracking
-Data visualization (matplotlib)
-Docker support
-Unit tests
+- Logging system
+- Execution time tracking
+- Data visualization (matplotlib)
+- Docker support
+- Unit tests
 
 ## Author
 Sarvar Xalimbetov
