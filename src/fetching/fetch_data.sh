@@ -1,7 +1,7 @@
 #!/bin/bash
 
-INPUT="../../raw/data.json"
-OUTPUT="../../processed/data.csv"
+INPUT="raw/data.json"
+OUTPUT="raw/data.csv"
 
 echo "id,name,published_at,employer_name,alternate_url" > "$OUTPUT"
 

@@ -1,0 +1,49 @@
+# Vacancy Analytics Report
+
+## 📊 Overview
+
+**Total vacancies:** 200
+
+## 🎯 Level Distribution
+
+| Level | Count | Percentage |
+|-------|-------|------------|
+| Senior | 25 | 12.5% |
+| Middle | 14 | 7.0% |
+| Junior | 7 | 3.5% |
+| Intern | 9 | 4.5% |
+| Unknown | 145 | 72.5% |
+
+## 📅 Most Active Day
+
+**2026-02-24** — 27 vacancies
+
+## 🧭 Directions Breakdown
+
+| Direction | Count |
+|-----------|-------|
+| Data Science | 27 |
+| Machine Learning | 24 |
+| Data Analyst | 16 |
+| Python | 8 |
+| Business Analyst | 6 |
+| Data Engineer | 6 |
+| Backend | 4 |
+| Project Manager | 4 |
+| 1C | 4 |
+| Frontend | 3 |
+| QA | 3 |
+| Product Manager | 3 |
+| Java | 2 |
+| Go | 2 |
+| Flutter | 2 |
+| Kubernetes | 1 |
+| Computer Vision | 1 |
+| C# | 1 |
+| AI | 1 |
+| TypeScript | 1 |
+| Automation QA | 1 |
+| C++ | 1 |
+| DevOps | 1 |
+| React | 1 |
+| React Native | 1 |

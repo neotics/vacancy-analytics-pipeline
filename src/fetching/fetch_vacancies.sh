@@ -36,6 +36,6 @@ do
 done
 
 
-jq -s '[ .[] | .items[] ]' "$TMP_ALL" > ../../raw/data.json
+jq -s '[ .[] | .items[] ]' "$TMP_ALL" > raw/data.json
 
 rm -f "$TMP_ALL"
