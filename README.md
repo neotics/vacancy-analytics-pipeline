@@ -84,10 +84,12 @@ python3 main.py --keyword "data science" --limit 100
 
 Pipeline natijasida quyidagi fayllar hosil bo‘ladi:
 
+```
 raw/data.json
 raw/data.csv
 processed/clean.csv
 processed/report.md
+```
 
 ## Report Example
 
